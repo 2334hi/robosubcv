@@ -29,7 +29,7 @@ def det_formating(detections, im_shape):
     for det in detections:
         xywh = det.xywh[0]
         output = np.zeros(5)
-        # Testing
+        # Bounding Box Motion Return
 
         # Center / Width / Height -> BBox corners coordinates
         x_min = (xywh[0] - 0.5*xywh[2]) #* im_shape[1]
